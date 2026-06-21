@@ -11,7 +11,7 @@ const slides = [
   {
     image: "https://www.kozogh.com/images/home_2-min.jpeg",
     badge: "Luxury stays",
-    title: "Your next unforgettable escape starts here",
+    title: "The Afro - Asian Experience",
     description:
       "A premium experience designed to feel bold, calm, and instantly captivating.",
     primaryCta: "Explore Spaces",
@@ -92,7 +92,7 @@ const Splider = () => {
                         {slide.badge}
                       </span>
 
-                      <h1 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl lg:text-7xl">
+                      <h1 className="mt-5 text-4xl capitalize font-semibold leading-tight sm:text-5xl lg:text-6xl">
                         {slide.title}
                       </h1>
 

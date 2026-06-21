@@ -11,3 +11,6 @@ This is a website for a beach resort or club.
 - GSAP
 
 ### Installation 
+- Clone the project using []
+- Change the directory to the cloned directory
+- Run npm install
