@@ -9,7 +9,7 @@ import "swiper/css/effect-fade";
 
 const slides = [
   {
-    image: "https://www.kozogh.com/images/home_2-min.jpeg",
+    image: "https://images.pexels.com/photos/37635567/pexels-photo-37635567.jpeg",
     badge: "Luxury stays",
     title: "The Afro - Asian Experience",
     description:
@@ -18,7 +18,7 @@ const slides = [
     secondaryCta: "Book Now",
   },
   {
-    image: "https://www.kozogh.com/images/wall-min.jpeg",
+    image: "https://images.pexels.com/photos/12169195/pexels-photo-12169195.jpeg",
     badge: "Elegant design",
     title: "Spaces that look as good as they feel",
     description:
@@ -50,7 +50,7 @@ const Splider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative w-full overflow-hidden bg-black">
+    <section className="relative w-full overflow-hidden bg-black lg:h-screen">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay, EffectFade]}
         slidesPerView={1}
@@ -73,7 +73,7 @@ const Splider = () => {
 
           return (
             <SwiperSlide key={slide.title}>
-              <div className="relative h-[88vh] min-h-[640px] w-full">
+              <div className="relative h-[88vh] min-h-[950px] w-full">
                 <img
                   src={slide.image}
                   alt={slide.title}
@@ -85,12 +85,12 @@ const Splider = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/15" />
                 <div className="absolute inset-0 bg-black/10" />
 
-                <div className="relative z-10 flex h-full items-end">
-                  <div className="mx-auto w-full max-w-7xl px-6 pb-16 sm:px-10 sm:pb-20 lg:pb-24">
-                    <div className="max-w-7xl text-white">
-                      <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.35em] backdrop-blur-md">
+                <div className="relative z-10 flex h-full justify-center items-center">
+                  <div className="px-6 pb-16 sm:px-10 sm:pb-20 lg:pb-24">
+                    <div className="text-white flex h-full justify-center items-center flex-col">
+                      {/* <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.35em] backdrop-blur-md">
                         {slide.badge}
-                      </span>
+                      </span> */}
 
                       <h1 className="mt-5 text-4xl capitalize font-semibold leading-tight sm:text-5xl lg:text-6xl">
                         {slide.title}
@@ -100,7 +100,7 @@ const Splider = () => {
                         {slide.description}
                       </p>
 
-                      <div className="mt-8 flex flex-wrap gap-4">
+                      <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
                         <button className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform duration-300 hover:scale-105">
                           {slide.primaryCta}
                         </button>

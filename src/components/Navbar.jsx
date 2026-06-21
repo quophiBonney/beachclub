@@ -24,7 +24,7 @@ const Navbar = () => {
             : "bg-transparent py-7"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
+        <div className="flex w-full items-center justify-between px-6 lg:px-20">
           {/* Logo */}
           <a
             href="/"
@@ -32,7 +32,7 @@ const Navbar = () => {
               isScrolled ? "text-black" : "text-white"
             }`}
           >
-            KOZOGH
+            BestBeachGh
           </a>
 
           {/* Desktop Menu */}
@@ -82,7 +82,7 @@ const Navbar = () => {
               isScrolled ? "text-black" : "text-white"
             }`}
           >
-            {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+            {mobileOpen ? <X size={28} color="black" /> : <Menu size={28} />}
           </button>
         </div>
       </header>
