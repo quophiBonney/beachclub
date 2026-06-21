@@ -1,0 +1,125 @@
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
+
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 80);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <>
+      <header
+        className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
+          isScrolled
+            ? "bg-white shadow-lg py-4"
+            : "bg-transparent py-7"
+        }`}
+      >
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
+          {/* Logo */}
+          <a
+            href="/"
+            className={`text-2xl font-semibold tracking-wide transition-all duration-500 ${
+              isScrolled ? "text-black" : "text-white"
+            }`}
+          >
+            KOZOGH
+          </a>
+
+          {/* Desktop Menu */}
+          <nav className="hidden items-center gap-10 lg:flex">
+            {[
+              "Home",
+              "About",
+              "Experiences",
+              "Gallery",
+              "Contact",
+            ].map((item) => (
+              <a
+                key={item}
+                href="/"
+                className={`group relative text-sm font-medium uppercase tracking-wider transition-all duration-300 ${
+                  isScrolled ? "text-black" : "text-white"
+                }`}
+              >
+                {item}
+
+                <span
+                  className={`absolute -bottom-2 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
+                    isScrolled ? "bg-black" : "bg-white"
+                  }`}
+                />
+              </a>
+            ))}
+          </nav>
+
+          {/* CTA */}
+          <div className="hidden lg:block">
+            <button
+              className={`rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 ${
+                isScrolled
+                  ? "bg-black text-white hover:bg-neutral-800"
+                  : "bg-white text-black hover:bg-neutral-100"
+              }`}
+            >
+              Book Now
+            </button>
+          </div>
+
+          {/* Mobile Button */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className={`lg:hidden transition-colors duration-300 ${
+              isScrolled ? "text-black" : "text-white"
+            }`}
+          >
+            {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+      </header>
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed left-0 top-0 z-40 h-screen w-full bg-white transition-all duration-500 lg:hidden ${
+          mobileOpen
+            ? "translate-x-0 opacity-100"
+            : "translate-x-full opacity-0"
+        }`}
+      >
+        <div className="flex h-full flex-col items-center justify-center gap-8">
+          {[
+            "Home",
+            "About",
+            "Experiences",
+            "Gallery",
+            "Contact",
+          ].map((item) => (
+            <a
+              key={item}
+              href="/"
+              onClick={() => setMobileOpen(false)}
+              className="text-2xl font-medium text-black transition-transform duration-300 hover:scale-105"
+            >
+              {item}
+            </a>
+          ))}
+
+          <button className="mt-4 rounded-full bg-black px-8 py-3 text-white">
+            Book Now
+          </button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Navbar;
