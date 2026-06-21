@@ -86,8 +86,8 @@ const Splider = () => {
                 <div className="absolute inset-0 bg-black/10" />
 
                 <div className="relative z-10 flex h-full items-end">
-                  <div className="mx-auto w-full max-w-7xl px-6 pb-16 sm:px-10 sm:pb-20 lg:px-16 lg:pb-24">
-                    <div className="max-w-3xl text-white">
+                  <div className="mx-auto w-full max-w-7xl px-6 pb-16 sm:px-10 sm:pb-20 lg:pb-24">
+                    <div className="max-w-7xl text-white">
                       <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.35em] backdrop-blur-md">
                         {slide.badge}
                       </span>
