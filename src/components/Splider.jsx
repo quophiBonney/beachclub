@@ -101,7 +101,7 @@ const Splider = () => {
                         {slide.badge}
                       </span> */}
 
-                      <h1 className="mt-5 text-4xl uppercase font-bold leading-tight sm:text-5xl lg:text-7xl">
+                      <h1 className="mt-5 text-2xl uppercase font-bold leading-tight sm:text-5xl lg:text-7xl">
                         {slide.title}
                       </h1>
 

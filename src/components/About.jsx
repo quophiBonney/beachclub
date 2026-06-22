@@ -24,7 +24,7 @@ const About = () => {
           excepturi incidunt id odio autem? Laboriosam quae voluptatum quisquam
           praesentium alias aperiam.
         </p>
-        <div className="flex flex-row gap-10 mt-10">
+        <div className="flex flex-col lg:flex-row gap-10 mt-10">
           <div className="w-1/2">
             <img
               src="https://images.pexels.com/photos/31029400/pexels-photo-31029400.jpeg"
