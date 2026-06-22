@@ -21,7 +21,7 @@ const slides = [
     title: "Sun. Sea. Serenity",
     description:
       "A premium experience designed to feel bold, calm, and instantly captivating.",
-    primaryCta: "Explore Spaces",
+    primaryCta: "Explore",
     secondaryCta: "Book Now",
   },
   {
@@ -50,7 +50,7 @@ const slides = [
     title: "Paradise Starts Here",
     description:
       "This is the kind of hero section that says, yes, we came prepared.",
-    primaryCta: "Discover More",
+    primaryCta: "Find More",
     secondaryCta: "Contact Us",
   },
 ];
@@ -82,7 +82,7 @@ const Splider = () => {
 
           return (
             <SwiperSlide key={slide.title}>
-              <div className="relative h-[70vh] lg:h-screen">
+              <div className="relative h-[75vh] lg:h-screen">
                 <img
                   src={slide.image}
                   alt={slide.title}
@@ -95,7 +95,7 @@ const Splider = () => {
                 <div className="absolute inset-0 bg-black/10" />
 
                 <div className="relative z-10 flex h-full justify-center items-center">
-                  <div className="px-6 pb-16 sm:px-10 sm:pb-20 lg:pb-24">
+                  <div className="px-4 pb-16 sm:px-10 sm:pb-20 lg:pb-24">
                     <div className="text-white flex h-full justify-center items-center flex-col">
                       {/* <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.35em] backdrop-blur-md">
                         {slide.badge}
