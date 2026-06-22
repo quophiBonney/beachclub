@@ -8,11 +8,6 @@ import {
 } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
-
 const slides = [
   {
     image:
@@ -90,7 +85,6 @@ const Splider = () => {
                     isActive ? "scale-100" : "scale-110"
                   }`}
                 />
-
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-black/15" />
                 <div className="absolute inset-0 bg-black/10" />
 
@@ -101,7 +95,7 @@ const Splider = () => {
                         {slide.badge}
                       </span> */}
 
-                      <h1 className="mt-5 text-xl uppercase font-bold leading-tight sm:text-5xl lg:text-7xl">
+                      <h1 className="mt-5 lg:mt-32 text-xl uppercase font-bold leading-tight sm:text-5xl lg:text-7xl">
                         {slide.title}
                       </h1>
 

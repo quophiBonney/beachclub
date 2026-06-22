@@ -1,14 +1,33 @@
 import React from "react";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, EffectCube } from "swiper/modules";
 const About = () => {
   return (
     <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 px-6 lg:px-20">
       <div className="h-full">
-        <img
-          src="https://images.pexels.com/photos/37050704/pexels-photo-37050704.jpeg"
-          alt=""
-          className="rounded h-full"
-        />
+        <Swiper
+          modules={[Autoplay, EffectFade, EffectCube]}
+          slidesPerView={1}
+          loop
+          effect="fade"
+          autoplay={{ delay: 4000, disableOnInteraction: true }}
+          cubeEffect={{ shadow: true }}
+        >
+          <SwiperSlide>
+            <img
+              src="https://images.pexels.com/photos/37050704/pexels-photo-37050704.jpeg"
+              alt=""
+              className="rounded h-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2070&auto=format&fit=crop"
+              alt=""
+              className="rounded h-full"
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
       <div className="h-full">
         <h2 className="text-2xl lg:text-6xl mb-5">
