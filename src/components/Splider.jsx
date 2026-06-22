@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { Navigation, Pagination, A11y, Autoplay, EffectFade } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  A11y,
+  Autoplay,
+  EffectFade,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -9,18 +15,20 @@ import "swiper/css/effect-fade";
 
 const slides = [
   {
-    image: "https://images.pexels.com/photos/37635567/pexels-photo-37635567.jpeg",
+    image:
+      "https://images.pexels.com/photos/37635567/pexels-photo-37635567.jpeg",
     badge: "Luxury stays",
-    title: "The Afro - Asian Experience",
+    title: "Sun. Sea. Serenity",
     description:
       "A premium experience designed to feel bold, calm, and instantly captivating.",
     primaryCta: "Explore Spaces",
     secondaryCta: "Book Now",
   },
   {
-    image: "https://images.pexels.com/photos/12169195/pexels-photo-12169195.jpeg",
+    image:
+      "https://images.pexels.com/photos/12169195/pexels-photo-12169195.jpeg",
     badge: "Elegant design",
-    title: "Spaces that look as good as they feel",
+    title: "Escape to Paradise",
     description:
       "Clean visuals, rich atmosphere, and a hero section that does not whisper.",
     primaryCta: "See Gallery",
@@ -29,7 +37,7 @@ const slides = [
   {
     image: "https://www.kozogh.com/images/home_4-min.jpeg",
     badge: "Attention stealing",
-    title: "A cinematic first impression for your homepage",
+    title: "Endless Coastal Bliss",
     description:
       "Big, wide, polished, and smooth enough to make the rest of the page jealous.",
     primaryCta: "Get Started",
@@ -38,7 +46,7 @@ const slides = [
   {
     image: "https://www.kozogh.com/images/wall-min.jpeg",
     badge: "Premium vibe",
-    title: "Built to impress before the user even scrolls",
+    title: "Paradise Starts Here",
     description:
       "This is the kind of hero section that says, yes, we came prepared.",
     primaryCta: "Discover More",
