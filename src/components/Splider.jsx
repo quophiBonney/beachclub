@@ -82,7 +82,7 @@ const Splider = () => {
 
           return (
             <SwiperSlide key={slide.title}>
-              <div className="relative h-full min-h-[950px] w-full flex flex-col justify-center">
+              <div className="relative h-[50vh] lg:h-screen">
                 <img
                   src={slide.image}
                   alt={slide.title}
