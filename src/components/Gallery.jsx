@@ -62,8 +62,9 @@ const Gallery = () => {
             Explore Our Gallery
           </h2>
 
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Discover breathtaking moments, resources and facilities at the highest peak of your comfort.
+          <p className="text-lg lg:text-2xl mt-4 text-gray-600 max-w-2xl mx-auto">
+            Discover breathtaking moments, resources and facilities at the
+            highest peak of your comfort.
           </p>
         </div>
 
