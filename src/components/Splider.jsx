@@ -109,7 +109,7 @@ const Splider = () => {
                         {slide.description}
                       </p>
 
-                      <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
+                      <div className="mt-8 flex flex-wrap justify-center items-center gap-4 mb-10">
                         <button className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform duration-300 hover:scale-105">
                           {slide.primaryCta}
                         </button>
