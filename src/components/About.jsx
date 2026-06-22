@@ -25,14 +25,14 @@ const About = () => {
           praesentium alias aperiam.
         </p>
         <div className="flex flex-col lg:flex-row gap-10 mt-10">
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <img
               src="https://images.pexels.com/photos/31029400/pexels-photo-31029400.jpeg"
               alt=""
               className="rounded h-full w-full"
             />
           </div>
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <img
               src="https://images.pexels.com/photos/904089/pexels-photo-904089.jpeg"
               alt=""
