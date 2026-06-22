@@ -82,7 +82,7 @@ const Splider = () => {
 
           return (
             <SwiperSlide key={slide.title}>
-              <div className="relative h-[65vh] lg:h-screen">
+              <div className="relative h-[70vh] lg:h-screen">
                 <img
                   src={slide.image}
                   alt={slide.title}
@@ -101,11 +101,11 @@ const Splider = () => {
                         {slide.badge}
                       </span> */}
 
-                      <h1 className="mt-5 text-2xl uppercase font-bold leading-tight sm:text-5xl lg:text-7xl">
+                      <h1 className="mt-5 text-xl uppercase font-bold leading-tight sm:text-5xl lg:text-7xl">
                         {slide.title}
                       </h1>
 
-                      <p className="text-center mt-3 text-lg lg:text-2xl leading-7 text-white">
+                      <p className="text-center mt-3 text-base lg:text-2xl text-white">
                         {slide.description}
                       </p>
 
