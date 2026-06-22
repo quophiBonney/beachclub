@@ -91,7 +91,7 @@ const Gallery = () => {
             Discover
           </span>
 
-          <h2 className="mt-4 text-4xl font-bold text-black md:text-5xl lg:text-6xl">
+          <h2 className="mt-4 text-4xl font-bold text-amber-600 md:text-5xl lg:text-6xl">
             Explore Our Gallery
           </h2>
 

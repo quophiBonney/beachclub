@@ -26,8 +26,8 @@ const Navbar = () => {
           {/* Logo */}
           <Link
             to="/"
-            className={`logo text-2xl font-semibold tracking-wide transition-all duration-500 ${
-              isScrolled ? "text-black" : "text-white"
+            className={`logo text-xl font-semibold tracking-wide transition-all duration-500 uppercase ${
+              isScrolled ? "text-amber-600" : "text-white"
             }`}
           >
             BestBeachGh
@@ -61,8 +61,8 @@ const Navbar = () => {
             <button
               className={`rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 ${
                 isScrolled
-                  ? "bg-black text-white hover:bg-neutral-800"
-                  : "bg-white text-black hover:bg-neutral-100"
+                  ? "bg-amber-600 text-white hover:bg-neutral-800"
+                  : "bg-white text-amber-600 hover:bg-neutral-100"
               }`}
             >
               Book Now
@@ -73,10 +73,14 @@ const Navbar = () => {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className={`lg:hidden transition-colors duration-300 ${
-              isScrolled ? "text-black" : "text-white"
+              isScrolled ? "text-amber-600" : "text-white"
             }`}
           >
-            {mobileOpen ? <X size={28} color="black" /> : <Menu size={28} />}
+            {mobileOpen ? (
+              <X size={28} className="text-red-600" />
+            ) : (
+              <Menu size={28} />
+            )}
           </button>
         </div>
       </header>

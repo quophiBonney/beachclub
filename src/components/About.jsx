@@ -120,7 +120,7 @@ const About = () => {
           </div>
 
           <h2 className="max-w-2xl text-4xl font-bold leading-tight text-slate-950 sm:text-5xl lg:text-6xl">
-            Your <span className="text-amber-500">Perfect</span> Beach
+            Your <span className="text-amber-600">Perfect</span> Beach
             Destination
           </h2>
 
@@ -155,7 +155,7 @@ const About = () => {
           </div>
 
           <div className="mt-10 rounded-3xl border border-white/70 bg-white/80 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] backdrop-blur">
-            <p className="text-xs uppercase tracking-[0.3em] text-emerald-600">
+            <p className="text-xs uppercase tracking-[0.3em] text-amber-600">
               Featured Mood
             </p>
             <h3 className="mt-2 text-2xl font-bold text-slate-950">

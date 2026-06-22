@@ -3,6 +3,7 @@ import Splider from "./components/Splider";
 import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Splider />
       <Gallery />
       <About />
+      <Footer />
     </div>
   );
 };
