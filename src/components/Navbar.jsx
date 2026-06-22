@@ -35,25 +35,58 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden items-center gap-10 lg:flex">
-            {["Home", "About", "Experiences", "Gallery", "Contact"].map(
-              (item) => (
-                <a
-                  key={item}
-                  href="/"
-                  className={`group relative text-sm font-medium uppercase tracking-wider transition-all duration-300 ${
-                    isScrolled ? "text-black" : "text-white"
-                  }`}
-                >
-                  {item}
-
-                  <span
-                    className={`absolute -bottom-2 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
-                      isScrolled ? "bg-black" : "bg-white"
-                    }`}
-                  />
-                </a>
-              ),
-            )}
+            <Link
+              to="/"
+              className={`group relative text-sm font-medium uppercase tracking-wider transition-all duration-300 ${
+                isScrolled ? "text-black" : "text-white"
+              }`}
+            >
+              Home
+              <span
+                className={`absolute -bottom-2 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
+                  isScrolled ? "bg-black" : "bg-white"
+                }`}
+              />
+            </Link>
+            <Link
+              to="/menus"
+              className={`group relative text-sm font-medium uppercase tracking-wider transition-all duration-300 ${
+                isScrolled ? "text-black" : "text-white"
+              }`}
+            >
+              Menus
+              <span
+                className={`absolute -bottom-2 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
+                  isScrolled ? "bg-black" : "bg-white"
+                }`}
+              />
+            </Link>
+            <Link
+              to="/about-us"
+              className={`group relative text-sm font-medium uppercase tracking-wider transition-all duration-300 ${
+                isScrolled ? "text-black" : "text-white"
+              }`}
+            >
+              About Us
+              <span
+                className={`absolute -bottom-2 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
+                  isScrolled ? "bg-black" : "bg-white"
+                }`}
+              />
+            </Link>
+            <Link
+              to="/contact"
+              className={`group relative text-sm font-medium uppercase tracking-wider transition-all duration-300 ${
+                isScrolled ? "text-black" : "text-white"
+              }`}
+            >
+              Contact
+              <span
+                className={`absolute -bottom-2 left-0 h-[2px] w-0 transition-all duration-300 group-hover:w-full ${
+                  isScrolled ? "bg-black" : "bg-white"
+                }`}
+              />
+            </Link>
           </nav>
 
           {/* CTA */}

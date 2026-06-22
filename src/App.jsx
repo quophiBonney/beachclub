@@ -1,17 +1,18 @@
 import React from "react";
-import Splider from "./components/Splider";
 import Navbar from "./components/Navbar";
-import Gallery from "./components/Gallery";
-import About from "./components/About";
 import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Menus from "./pages/Menus";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Splider />
-      <Gallery />
-      <About />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menus" element={<Menus />} />
+      </Routes>
       <Footer />
     </div>
   );
