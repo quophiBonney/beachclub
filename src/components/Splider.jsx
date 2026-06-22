@@ -44,7 +44,8 @@ const slides = [
     secondaryCta: "View Details",
   },
   {
-    image: "https://www.kozogh.com/images/wall-min.jpeg",
+    image:
+      "https://images.pexels.com/photos/31663412/pexels-photo-31663412.jpeg",
     badge: "Premium vibe",
     title: "Paradise Starts Here",
     description:
