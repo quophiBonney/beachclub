@@ -127,18 +127,34 @@ const Navbar = () => {
         }`}
       >
         <div className="flex h-full flex-col items-center justify-center gap-8">
-          {["Home", "About", "Experiences", "Gallery", "Contact"].map(
-            (item) => (
-              <a
-                key={item}
-                href="/"
-                onClick={() => setMobileOpen(false)}
-                className="text-2xl font-medium text-black transition-transform duration-300 hover:scale-105"
-              >
-                {item}
-              </a>
-            ),
-          )}
+          <Link
+            to="/"
+            onClick={() => setMobileOpen(false)}
+            className="text-2xl font-medium text-black transition-transform duration-300 hover:scale-105"
+          >
+            Home
+          </Link>
+          <Link
+            to="/menus"
+            onClick={() => setMobileOpen(false)}
+            className="text-2xl font-medium text-black transition-transform duration-300 hover:scale-105"
+          >
+            Menus
+          </Link>
+          <Link
+            to="/about-us"
+            onClick={() => setMobileOpen(false)}
+            className="text-2xl font-medium text-black transition-transform duration-300 hover:scale-105"
+          >
+            About Us
+          </Link>
+          <Link
+            to="/contact"
+            onClick={() => setMobileOpen(false)}
+            className="text-2xl font-medium text-black transition-transform duration-300 hover:scale-105"
+          >
+            Contact
+          </Link>
 
           <button className="mt-4 rounded-full bg-black px-8 py-3 text-white">
             Book Now
