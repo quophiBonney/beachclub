@@ -134,7 +134,7 @@ const BookingModal = ({ open, onClose, activeSlide }) => {
                 </p>
                 <h2
                   id="booking-title"
-                  className="mt-2 text-2xl font-bold text-slate-950 sm:text-3xl"
+                  className="mt-2 text-lg lg:text-2xl font-bold text-slate-950 sm:text-3xl"
                 >
                   Booking Request
                 </h2>
@@ -146,7 +146,7 @@ const BookingModal = ({ open, onClose, activeSlide }) => {
               <button
                 type="button"
                 onClick={onClose}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
+                className="flex h-8 w-8 lg:h-11 lg:w-11 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition hover:bg-slate-100 hover:text-slate-950"
                 aria-label="Close booking modal"
               >
                 ✕
