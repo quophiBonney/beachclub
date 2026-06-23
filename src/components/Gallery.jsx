@@ -84,14 +84,14 @@ const Gallery = () => {
   }, [selectedIndex]);
 
   return (
-    <section className="overflow-hidden bg-white px-5 py-20">
-      <div className="mx-auto max-w-7xl">
+    <section className="overflow-hidden bg-white px-5 py-20 lg:px-16 xl:px-20">
+      <div className="w-full">
         <div className="mb-14 text-center">
           <span className="text-sm uppercase tracking-[0.3em] text-gray-500">
             Discover
           </span>
 
-          <h2 className="mt-4 text-4xl font-bold text-amber-600 md:text-5xl lg:text-6xl">
+          <h2 className="mt-4 text-4xl font-bold text-black 00 md:text-5xl lg:text-6xl">
             Explore Our Gallery
           </h2>
 
@@ -132,9 +132,13 @@ const Gallery = () => {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-            1200: {
+            1080: {
               slidesPerView: 3,
               spaceBetween: 30,
+            },
+            1200: {
+              slidesPerView: 2,
+              spaceBetween: 50,
             },
           }}
           modules={[EffectCoverflow, Navigation, Autoplay]}
@@ -182,10 +186,10 @@ const Gallery = () => {
 
       {selectedIndex !== null && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4 backdrop-blur-sm">
-          <div className="relative w-full max-w-6xl">
+          <div className="relative w-full max-w-7xl">
             <button
               onClick={closePreview}
-              className="absolute right-3 top-3 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-red-500 text-white backdrop-blur-md transition hover:bg-white/20"
+              className="cursor-pointer absolute right-3 top-3 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-red-500 text-white backdrop-blur-md transition hover:bg-white/20"
               aria-label="Close preview"
             >
               ✕
@@ -212,7 +216,7 @@ const Gallery = () => {
 
                 <button
                   onClick={goPrev}
-                  className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/10 px-4 py-3 text-white backdrop-blur-md transition hover:bg-white/20 sm:left-6"
+                  className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/10 px-4 py-3 text-white backdrop-blur-md transition hover:bg-white/20 sm:left-6 cursor-pointer"
                   aria-label="Previous image"
                 >
                   ←
@@ -220,7 +224,7 @@ const Gallery = () => {
 
                 <button
                   onClick={goNext}
-                  className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/10 px-4 py-3 text-white backdrop-blur-md transition hover:bg-white/20 sm:right-6"
+                  className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/10 px-4 py-3 text-white backdrop-blur-md transition hover:bg-white/20 sm:right-6 cursor-pointer"
                   aria-label="Next image"
                 >
                   →

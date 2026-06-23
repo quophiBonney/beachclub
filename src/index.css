@@ -16,3 +16,11 @@ h6,
   font-family: "Archivo Black" sans-serif !important;
   font-weight: 900;
 }
+.catchy {
+    background-image: url("https://www.kozogh.com/images/wall-min.jpeg");
+  background-size: cover;
+}
+footer {
+  background-image: url("https://www.kozogh.com/images/wall-min.jpeg");
+  background-size: cover;
+}

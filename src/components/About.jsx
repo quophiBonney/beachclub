@@ -313,12 +313,12 @@ const About = () => {
       <section className="relative overflow-hidden bg-[#f7f8fb] px-6 py-20 lg:px-20">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(16,185,129,0.16),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.12),_transparent_30%)]" />
 
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
+        <div className="mx-auto grid xl:max-w-8xl grid-cols-1 gap-10 xl:gap-16 lg:grid-cols-2 lg:items-center">
           <div className="relative">
             <div className="absolute -left-6 -top-6 h-28 w-28 rounded-full bg-emerald-400/20 blur-3xl" />
             <div className="absolute -bottom-8 -right-8 h-32 w-32 rounded-full bg-blue-400/20 blur-3xl" />
 
-            <div className="overflow-hidden rounded-[2rem] border border-white/70 bg-white p-3 shadow-[0_25px_80px_rgba(15,23,42,0.12)]">
+            <div className="overflow-hidden rounded-[2rem] border border-white/70 bg-white p-3 lg:p-2 xl:p-5 shadow-[0_25px_80px_rgba(15,23,42,0.12)]">
               <Swiper
                 modules={[Autoplay, EffectCube]}
                 slidesPerView={1}
