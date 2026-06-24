@@ -5,27 +5,26 @@ import { Autoplay, Navigation, Parallax, EffectCreative } from "swiper/modules";
 const slides = [
   {
     image:
-      "https://images.pexels.com/photos/37635567/pexels-photo-37635567.jpeg",
+      "https://images.pexels.com/photos/12261079/pexels-photo-12261079.jpeg",
     badge: "Luxury stays",
     title: "Sun. Sea. Serenity",
     text: "A premium escape designed to feel cinematic, calm, and unforgettable.",
   },
   {
-    image:
-      "https://images.pexels.com/photos/12169195/pexels-photo-12169195.jpeg",
+    image: "https://images.pexels.com/photos/7627418/pexels-photo-7627418.jpeg",
     badge: "Elegant design",
     title: "Escape to Paradise",
     text: "Soft motion, rich atmosphere, and a bold visual story from the first glance.",
   },
   {
-    image: "https://www.kozogh.com/images/home_4-min.jpeg",
+    image:
+      "https://images.pexels.com/photos/26673869/pexels-photo-26673869.jpeg",
     badge: "Attention stealing",
     title: "Endless Coastal Bliss",
     text: "Wide, dramatic, and polished enough to make the whole page feel expensive.",
   },
   {
-    image:
-      "https://images.pexels.com/photos/31663412/pexels-photo-31663412.jpeg",
+    image: "https://images.pexels.com/photos/5083907/pexels-photo-5083907.jpeg",
     badge: "Premium vibe",
     title: "Paradise Starts Here",
     text: "A hero section that moves with depth, elegance, and serious presence.",
@@ -36,7 +35,7 @@ const MenusHero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden bg-black lg:h-screen">
+    <section className="relative h-[75vh] md:h-[65vh] w-full overflow-hidden bg-black lg:h-screen">
       <Swiper
         modules={[Autoplay, Navigation, Parallax, EffectCreative]}
         slidesPerView={1}

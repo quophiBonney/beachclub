@@ -8,34 +8,32 @@ import "swiper/css/effect-coverflow";
 
 const places = [
   {
-    name: "Santorini",
+    name: "Red Cocktail",
     image:
-      "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2070&auto=format&fit=crop",
+      "https://images.pexels.com/photos/16467615/pexels-photo-16467615.jpeg",
   },
   {
-    name: "Maldives",
+    name: "Fried Rice & Chicken",
     image:
-      "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2070&auto=format&fit=crop",
+      "https://images.pexels.com/photos/29848156/pexels-photo-29848156.jpeg",
   },
   {
-    name: "Bali",
+    name: "Our View",
     image:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=2070&auto=format&fit=crop",
+      "https://images.pexels.com/photos/37853195/pexels-photo-37853195.jpeg",
   },
   {
-    name: "Dubai",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop",
+    name: "Cocktail With Orange",
+    image: "https://images.pexels.com/photos/9119755/pexels-photo-9119755.jpeg",
   },
   {
-    name: "Paris",
+    name: "Cooked Food",
     image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2070&auto=format&fit=crop",
+      "https://images.pexels.com/photos/13699080/pexels-photo-13699080.jpeg",
   },
   {
-    name: "Swiss Alps",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2070&auto=format&fit=crop",
+    name: "Our Night Life",
+    image: "https://images.pexels.com/photos/4306971/pexels-photo-4306971.jpeg",
   },
   {
     name: "Cape Town",
@@ -43,9 +41,9 @@ const places = [
       "https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?q=80&w=2070&auto=format&fit=crop",
   },
   {
-    name: "Tokyo",
+    name: "Party With Us",
     image:
-      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2070&auto=format&fit=crop",
+      "https://images.pexels.com/photos/15921581/pexels-photo-15921581.jpeg",
   },
 ];
 

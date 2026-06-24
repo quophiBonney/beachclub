@@ -5,6 +5,7 @@ import { Autoplay, EffectCube } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-cube";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -418,9 +419,12 @@ const About = () => {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <button className="rounded-full bg-slate-950 px-7 py-3 text-sm font-semibold text-white transition hover:scale-[1.02] hover:bg-black">
+              <Link
+                to="/menus"
+                className="rounded-full bg-slate-950 px-7 py-3 text-sm font-semibold text-white transition hover:scale-[1.02] hover:bg-black"
+              >
                 Explore More
-              </button>
+              </Link>
               <button
                 onClick={() => setIsBookingOpen(true)}
                 className="rounded-full border border-slate-300 bg-white px-7 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-50 cursor-pointer"

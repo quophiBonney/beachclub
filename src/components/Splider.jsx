@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Navigation,
   Pagination,
@@ -9,6 +10,15 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const slides = [
+  {
+    image:
+      "https://images.pexels.com/photos/17077068/pexels-photo-17077068.jpeg",
+    title: "Live. Have Fun. Enjoy",
+    description:
+      "A premium experience designed to feel bold, calm, and instantly captivating.",
+    primaryCta: "Explore",
+    secondaryCta: "Book Now",
+  },
   {
     image:
       "https://images.pexels.com/photos/37635567/pexels-photo-37635567.jpeg",
@@ -54,7 +64,7 @@ const Splider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative w-full overflow-hidden bg-black h-[60vh] lg:h-screen">
+    <section className="relative w-full overflow-hidden bg-black h-[60vh] md:h-[65vh] lg:h-screen">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay, EffectFade]}
         slidesPerView={1}
@@ -104,12 +114,18 @@ const Splider = () => {
                       </p>
 
                       <div className="mt-8 flex flex-wrap justify-center items-center gap-4 mb-10">
-                        <button className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform duration-300 hover:scale-105">
+                        <Link
+                          to="/menus"
+                          className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform duration-300 hover:scale-105"
+                        >
                           {slide.primaryCta}
-                        </button>
-                        <button className="rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-transform duration-300 hover:scale-105">
+                        </Link>
+                        <Link
+                          to="/contact"
+                          className="rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-transform duration-300 hover:scale-105"
+                        >
                           {slide.secondaryCta}
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
