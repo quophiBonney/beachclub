@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Navigation,
   Pagination,
@@ -113,12 +114,18 @@ const Splider = () => {
                       </p>
 
                       <div className="mt-8 flex flex-wrap justify-center items-center gap-4 mb-10">
-                        <button className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform duration-300 hover:scale-105">
+                        <Link
+                          to="/menus"
+                          className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform duration-300 hover:scale-105"
+                        >
                           {slide.primaryCta}
-                        </button>
-                        <button className="rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-transform duration-300 hover:scale-105">
+                        </Link>
+                        <Link
+                          to="/contact"
+                          className="rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-md transition-transform duration-300 hover:scale-105"
+                        >
                           {slide.secondaryCta}
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

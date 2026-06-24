@@ -3,10 +3,9 @@ import { Quote, BriefcaseBusiness } from "lucide-react";
 const ceoMessage = {
   name: "Daniel A. Mensah",
   role: "Founder & CEO",
-  image:
-    "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  image: "https://images.pexels.com/photos/8428066/pexels-photo-8428066.jpeg",
   message:
-    "We built this company on a simple belief: people remember how you make them feel. Every decision we make is guided by care, clarity, and excellence. We built this company on a simple belief: people remember how you make them feel. Every decision we make is guided by care, clarity, and excellence. We built this company on a simple belief: people remember how you make them feel. Every decision we make is guided by care, clarity, and excellence",
+    "We built this company on a simple belief: people remember how you make them feel. Every decision we make is guided by care, clarity, and excellence. We built this company on a simple belief: people remember how you make them feel. Every decision we make is guided by care, clarity, and excellence. ",
 };
 
 const CEOMessage = () => {
