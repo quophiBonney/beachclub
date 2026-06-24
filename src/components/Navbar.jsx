@@ -106,7 +106,7 @@ const Navbar = () => {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className={`lg:hidden transition-colors duration-300 ${
-              isScrolled ? "text-amber-600" : "text-white"
+              isScrolled ? "text-black" : "text-white"
             }`}
           >
             {mobileOpen ? (
