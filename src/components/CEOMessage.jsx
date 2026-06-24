@@ -36,7 +36,7 @@ const CEOMessage = () => {
         <div className="rounded-[2rem] border bg-white p-8 lg:p-10">
           <Quote className="h-12 w-12 text-slate-200" />
 
-          <p className="mt-6 text-lg leading-8 text-slate-700">
+          <p className="mt-6 text-base lg:text-lg leading-8 text-slate-700">
             {ceoMessage.message}
           </p>
         </div>
