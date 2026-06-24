@@ -90,9 +90,9 @@ const AboutHero = () => {
       ref={wrapRef}
       className="relative overflow-hidden px-4 py-8 sm:px-6 lg:px-10 lg:py-14 bg-[#030712]"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.28),transparent_26%),radial-gradient(circle_at_80%_15%,rgba(236,72,153,0.2),transparent_24%),radial-gradient(circle_at_50%_85%,rgba(168,85,247,0.16),transparent_28%),linear-gradient(180deg,#050816_0%,#030712_100%)]" />
-      <div className="absolute inset-0 opacity-[0.14] [background-image:linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:80px_80px]" />
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/26834970/pexels-photo-26834970.jpeg')] bg-cover bg-center opacity-[0.09] mix-blend-screen" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_10%,rgba(59,130,246,0.28),transparent_26%),radial-gradient(circle_at_60%_15%,rgba(236,72,153,0.2),transparent_14%),radial-gradient(circle_at_40%_55%,rgba(168,85,247,0.16),transparent_18%),linear-gradient(180deg,#050816_0%,#030712_100%)]" />
+      <div className="absolute inset-0 opacity-[0.14] [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:80px_80px]" />
+      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/26834970/pexels-photo-26834970.jpeg')] bg-cover bg-center opacity-[0.3] mix-blend-screen" />
 
       <div className="mt-26 mb-20 px-3 lg:px-8 relative mx-auto grid max-w-8xl items-center lg:grid-cols-[1.1fr_0.9fr]">
         <div ref={panelRef} className="relative overflow-hidden ">
