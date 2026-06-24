@@ -64,7 +64,7 @@ const Splider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative w-full overflow-hidden bg-black h-[60vh] lg:h-screen">
+    <section className="relative w-full overflow-hidden bg-black h-[60vh] md:h-[65vh] lg:h-screen">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay, EffectFade]}
         slidesPerView={1}
