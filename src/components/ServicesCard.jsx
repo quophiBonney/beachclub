@@ -1,24 +1,27 @@
 import React from "react";
-import { MapPin, Phone, Mail } from "lucide-react";
+
+import { IoIosRestaurant } from "react-icons/io";
+import { FaUmbrellaBeach, FaPersonHiking } from "react-icons/fa6";
+import { RiHotelBedFill } from "react-icons/ri";
 
 const contactItems = [
   {
-    icon: <MapPin className="h-6 w-6" />,
+    icon: <FaUmbrellaBeach className="h-6 w-6" />,
     title: "Beach Clubing",
     text: "Enjoy the ultimate beach club experience with live DJs, signature cocktails, beachfront lounges, and energetic entertainment. Perfect for socializing, celebrating, or simply soaking up the atmosphere by the sea.",
   },
   {
-    icon: <Phone className="h-6 w-6" />,
+    icon: <IoIosRestaurant className="h-6 w-6" />,
     title: "Restaurant",
     text: "Indulge in exceptional dining experiences featuring fresh ingredients, expertly prepared cuisine, and stunning coastal views. Whether enjoying local specialties or international favorites, guests can savor memorable meals in a vibrant setting.",
   },
   {
-    icon: <Mail className="h-6 w-6" />,
+    icon: <FaPersonHiking className="h-6 w-6" />,
     title: "Outdoor Fun",
     text: "Discover exciting outdoor activities designed for adventure and relaxation. From beach games and water sports to scenic walks and family-friendly experiences, there is something for every guest to enjoy under the open sky.",
   },
   {
-    icon: <Mail className="h-6 w-6" />,
+    icon: <RiHotelBedFill className="h-6 w-6" />,
     title: "Hospitality",
     text: "Experience premium hospitality with elegant accommodations, personalized service, and a relaxing atmosphere designed to make every guest feel welcome. From luxurious rooms to attentive staff, every detail is crafted for comfort and unforgettable stays.",
   },
