@@ -1,16 +1,27 @@
 # Beach Club Website
+
 This is a website for a beach resort or club.
 
 ## Preview
-![alttext][]
+
+![alt text](image.png)
 
 ## Tech
+
 - Tailwindcss
 - Swiperjs
 - Vite
 - GSAP
 
-### Installation 
-- Clone the project using []
-- Change the directory to the cloned directory
-- Run npm install
+### Installation
+
+```bash
+git clone https://github.com/quophiBonney/beachclub.git
+cd beach-resort
+npm install
+npm run dev
+```
+
+## License
+
+This project is licensed under the MIT License.
