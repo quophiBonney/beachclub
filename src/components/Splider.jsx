@@ -11,6 +11,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const slides = [
   {
     image:
+      "https://images.pexels.com/photos/17077068/pexels-photo-17077068.jpeg",
+    title: "Live. Have Fun. Enjoy",
+    description:
+      "A premium experience designed to feel bold, calm, and instantly captivating.",
+    primaryCta: "Explore",
+    secondaryCta: "Book Now",
+  },
+  {
+    image:
       "https://images.pexels.com/photos/37635567/pexels-photo-37635567.jpeg",
     badge: "Luxury stays",
     title: "Sun. Sea. Serenity",
