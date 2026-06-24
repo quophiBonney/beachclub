@@ -35,7 +35,7 @@ const MenusHero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden bg-black lg:h-screen">
+    <section className="relative h-[75vh] w-full overflow-hidden bg-black lg:h-screen">
       <Swiper
         modules={[Autoplay, Navigation, Parallax, EffectCreative]}
         slidesPerView={1}
