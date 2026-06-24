@@ -10,8 +10,8 @@ const ceoMessage = {
 
 const CEOMessage = () => {
   return (
-    <section className="px-4 py-10 lg:px-10 lg:py-16">
-      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+    <section className="px-4 py-10 lg:px-16 lg:py-16">
+      <div className="mx-auto grid max-w-8xl gap-10 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="relative overflow-hidden rounded-[2rem]">
           <img
             src={ceoMessage.image}
@@ -33,7 +33,7 @@ const CEOMessage = () => {
           </div>
         </div>
 
-        <div className="rounded-[2rem] border bg-white p-8 lg:p-10">
+        <div className="rounded-[2rem] bg-white p-8 lg:p-10">
           <Quote className="h-12 w-12 text-slate-200" />
 
           <p className="mt-6 text-base lg:text-lg leading-8 text-slate-700">

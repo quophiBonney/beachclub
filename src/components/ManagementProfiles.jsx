@@ -34,8 +34,8 @@ const managementTeam = [
 
 const ManagementProfiles = () => {
   return (
-    <section className="px-4 py-10 lg:px-10 lg:py-16">
-      <div className="mx-auto max-w-7xl">
+    <section className="px-4 py-10 lg:px-16 lg:py-16">
+      <div className="max-w-8xl">
         <div className="mb-10">
           <h2 className="text-4xl font-semibold text-slate-900">
             Leadership Team
@@ -49,7 +49,7 @@ const ManagementProfiles = () => {
           {managementTeam.map((member) => (
             <div
               key={member.name}
-              className="overflow-hidden rounded-[2rem] border bg-white shadow-lg transition hover:-translate-y-2"
+              className="overflow-hidden rounded-[1rem] r bg-white shadow-lg transition hover:-translate-y-2"
             >
               <div className="h-80 overflow-hidden">
                 <img
@@ -59,7 +59,7 @@ const ManagementProfiles = () => {
                 />
               </div>
 
-              <div className="p-6">
+              <div className="p-6 bg-white">
                 <h3 className="text-xl font-semibold">{member.name}</h3>
 
                 <p className="mt-1 text-sm text-slate-500">{member.role}</p>
