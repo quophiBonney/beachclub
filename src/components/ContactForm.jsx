@@ -74,13 +74,13 @@ const ContactForm = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[#070B14] px-4 py-10 sm:px-6 lg:px-10 lg:py-16"
+      className="relative overflow-hidden bg-[#070B14] px-4 py-10 sm:px-6 lg:px-20 lg:py-16"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.22),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(168,85,247,0.18),_transparent_25%)]" />
       <div className="absolute left-10 top-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl soft-glow" />
       <div className="absolute bottom-10 right-10 h-44 w-44 rounded-full bg-fuchsia-500/20 blur-3xl soft-glow" />
 
-      <div className="relative mx-auto grid max-w-7xl items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
+      <div className="relative mx-auto grid max-w-8xl items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
         <div
           ref={formRef}
           className="rounded-[2rem] border border-white/10 bg-white/6 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8 lg:p-10"
