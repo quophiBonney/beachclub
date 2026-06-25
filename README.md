@@ -17,7 +17,7 @@ This is a website for a beach resort or club.
 
 ```bash
 git clone https://github.com/quophiBonney/beachclub.git
-cd beach-resort
+cd beachclub
 npm install
 npm run dev
 ```
